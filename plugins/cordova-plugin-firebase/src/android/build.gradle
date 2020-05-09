@@ -5,6 +5,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:+'
+        classpath 'com.tempustecnologia.push'
     }
 }
 repositories {
@@ -23,6 +24,6 @@ dependencies {
 }
 
 cdvPluginPostBuildExtras.add({
-    
+    apply plugin: 'com.tempustecnologia.push'
     apply plugin: 'io.fabric'
 })
