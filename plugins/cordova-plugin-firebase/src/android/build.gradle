@@ -24,6 +24,6 @@ dependencies {
 }
 
 cdvPluginPostBuildExtras.add({
-    apply plugin: 'com.tempustecnologia.push'
+    apply plugin: 'com.google.gms.google-services'
     apply plugin: 'io.fabric'
 })
